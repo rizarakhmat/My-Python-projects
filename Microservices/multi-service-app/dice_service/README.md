@@ -7,20 +7,23 @@ testing with Locust - load testing tool
 
 ### Run the application
 
-docker compose build
+ ```bash
 
-docker compose up -d
+  $ docker-compose build
+  $ docker-compose up -d
+  ```
 
-locust -f locustfile.py
+ ```bash
 
-locust:
-    number of users (peak concurrency): 100
-    spawn rate: 10
-    Host: http://127.0.0.1:5000/
+  $ locust -f locustfile.py
+  ```
 
 no problem until 300-400 users (around 20 RPS)
 
 then scale up
-docker-compose up -d --scale string-service=6 --no-recreate
 
+ ```bash
+
+  $ docker-compose up -d --scale string-service=6 --no-recreate
+  ```
 then it will scale better (around 40 RPS)
