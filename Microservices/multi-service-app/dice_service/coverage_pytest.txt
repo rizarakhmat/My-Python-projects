@@ -1,0 +1,17 @@
+platform win32 -- Python 3.9.13, pytest-7.2.0, pluggy-1.0.0
+rootdir: C:\Users\rizar\Documents\5th semester\ASE 2022-23\LAB\example\dice_service\examone
+plugins: cov-4.0.0
+collected 3 items
+
+tests\a_test.py ...                                                                                                                                     [100%]
+
+---------- coverage: platform win32, python 3.9.13-final-0 -----------
+Name                Stmts   Miss  Cover
+---------------------------------------
+__init__.py             0      0   100%
+app.py                 22      4    82%
+tests\__init__.py       0      0   100%
+tests\a_test.py        11      0   100%
+tests\conftest.py       8      0   100%
+---------------------------------------
+TOTAL                  41      4    90%
